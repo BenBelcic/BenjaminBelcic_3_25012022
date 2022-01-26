@@ -1,0 +1,14 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "work p3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:asset/style.css"
+  },
+  "author": "Benjamin Belcic",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.49.0"
+  }
+}
