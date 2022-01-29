@@ -1,0 +1,64 @@
+.home-title {
+    &__text {
+        @include home-title__text
+    }
+}
+
+.localisation {
+    &__text {
+        position: relative;
+    }
+    &__text span {
+        position: absolute;
+        top: 1em; right: 7.7em;
+    }   
+}
+
+.nav {
+    &__title {
+        @include nav-titles;
+    }
+    &__title2 {
+        @include nav-titles(90%);
+    }
+}
+
+.functioning {
+    &__title {
+        margin-left: 5%;
+    }
+    &__card {
+        @include flex-center;
+        position: relative;
+        margin: 1.5em auto 1.5em 10%;
+        padding: .5em 2.2em .5em 2.2em;;
+        width: 82%;
+        border-radius: $border-radius-vignet;
+        background-color: $softgray;
+        @include box-shadow;
+        &__text {
+            width: 12em;
+            font-weight: 600;
+        }
+        &__number {
+            @include flex-center;
+            width: 1.65em;
+            height: 1.65em;
+            position: absolute;
+            left: -1em;
+            background-color: $color-primary;
+            color: #fff;
+            border-radius: 50%;
+            font-size: .95rem;
+        }
+        &__icon {
+            width: 2em;
+        }
+        &:hover {
+            @include hover-vignet;
+        }
+    }
+}
+
+
+

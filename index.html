@@ -14,33 +14,40 @@
 <body>
     <header>
         <div class="home-title">
-            <h1 class="home-title_text">ohmyfood</h1>
+            <h1 class="home-title__text">ohmyfood</h1>
         </div>
         <div class="localisation">
-            <p class="localisation_text"><span class="fas fa-map-marker-alt"></span>Paris, Belleville</p>
+            <div class="localisation__text"><span class="fas fa-map-marker-alt"></span><p>Paris, Belleville</p></div>
         </div>
-        <nav>
-            <h2 class="nav_title">Réservez le menu qui vous convient</h2>
-            <h3 class="nav_title2">Découvrez des restaurants d'esception, séléctionnés par nos soins.</h3>
-            <div class="nav_btn">
-                <p class="nav_btn_text">Explorer nos restaurants</p>
-            </div>
+        <nav class="nav">
+            <div class="nav__title"><h2 class="nav__title__text">Réservez le menu qui vous convient</h2></div>
+            <div class="nav__title2"><h3 class="nav__title2__text">Découvrez des restaurants d'esception, séléctionnés par nos soins.</h3></div>
+            <form class="nav__btn__link" action="#restaurants">
+                <button class="nav__btn" type="submit"><p class="nav__btn__text">Explorer nos restaurants</p></button>
+            </form>
         </nav>
         <article class="functioning">
-            <h2 class="functioning_title">Fonctionnement</h2>
-            <div class="functioning_card">
-                <div class="functioning_card_number"></div>
-                <p class="functioning_card_text"><span class="fas fa-mobile-alt"></span>Choississez un restaurant</p>
+            <h2 class="functioning__title">Fonctionnement</h2>
+            <div class="functioning__card">
+                <div class="functioning__card__number"><p>1</p></div>
+                <div class="functioning__card__icon"><span class="fas fa-mobile-alt"></span></div>
+                <div class="functioning__card__text"><p>Choississez un restaurant</p></div>
             </div>
-            <div class="functioning_card">
-                <div class="functioning_card_number"></div>
-                <p class="functioning_card_text"><span class="fas fa-list-ul"></span>Composez votre menu</p>
+            <div class="functioning__card">
+                <div class="functioning__card__number"><p>2</p></div>
+                <div class="functioning__card__icon"><span class="fas fa-list-ul"></span></div>
+                <div class="functioning__card__text"><p>Composez votre menu</p></div>
             </div>
-            <div class="functioning_card">
-                <div class="functioning_card_number"></div>
-                <p class="functioning_card_text"><span class="fas fa-store"></span>Dégustez au restaurant</p>
+            <div class="functioning__card">
+                <div class="functioning__card__number"><p>3</p></div>
+                <div class="functioning__card__icon"><span class="fas fa-store"></span></div>
+                <div class="functioning__card__text"><p>Dégustez au restaurant</p></div>
             </div>
         </article>
     </header>
+    <a id="restaurants"></a>
+    <footer>
+        
+    </footer>
 
 </body>

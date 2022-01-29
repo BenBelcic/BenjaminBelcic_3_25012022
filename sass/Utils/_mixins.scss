@@ -1,0 +1,34 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin home-title__text {
+        margin: .6em 0 .3em 0;
+}
+
+@mixin heading-shadow ($color:$shadowgray){
+    box-shadow: inset 0 .12em .2em $color;
+}
+
+@mixin box-shadow ($color:$shadowgray){
+    box-shadow: 0px .4rem .7rem $color;
+}
+
+@mixin nav-titles ($width: 70%, $color: black, $font-size: none){
+    @include flex-center;   
+    &__text {
+        width: $width;
+        text-align: center;
+        margin: .4rem;
+        color: $color;
+        font-size: $font-size;
+    }
+}
+
+@mixin hover-vignet {
+        @include box-shadow ($color: darken($shadowgray, 25%));
+        filter: brightness(1.02);
+        cursor: pointer;
+}

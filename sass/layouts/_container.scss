@@ -1,0 +1,20 @@
+.home-title {
+    @include flex-center;
+}
+
+.localisation {
+    @include flex-center;
+    @include heading-shadow;
+    background-color: $darkgray;
+}
+
+.nav {
+    padding: 2em 0;
+    background-color: $softgray;
+}
+
+.functioning {
+    max-width: $max-with-vignet;
+    margin: 0 auto;
+    padding: 1rem 0;
+}

@@ -2,6 +2,19 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: $font-primary;
+}
+
+h2, h3, p {
+    font-family: $font-secondary;
+}
+
+h3 {
+    font-size: 110%;
+    font-weight: 300;
+}
+
 a {
     text-decoration: none;
 }
