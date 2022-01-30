@@ -14,3 +14,11 @@
         cursor: pointer;
     }
 }
+
+@media (min-width: 768px) {
+    .nav__btn {
+        height: 3em;
+        border-radius: 5em;
+        font-size: 1.3rem;
+    }
+}

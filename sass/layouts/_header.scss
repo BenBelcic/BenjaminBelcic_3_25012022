@@ -23,7 +23,7 @@
     }
 }
 
-.functioning {
+.functioning__contenair {
     &__title {
         margin-left: 5%;
     }
@@ -31,11 +31,14 @@
         @include flex-center;
         position: relative;
         margin: 1.5em auto 1.5em 10%;
-        padding: .5em 2.2em .5em 2.2em;;
+        padding: .5em 2.2em .5em 2.2em;
         width: 82%;
         border-radius: $border-radius-vignet;
         background-color: $softgray;
         @include box-shadow;
+        &--bgcolor {
+            background-color: lighten($color-primary,33%);
+        }
         &__text {
             width: 12em;
             font-weight: 600;
@@ -53,12 +56,57 @@
         }
         &__icon {
             width: 2em;
+            &--color {
+                color: $color-primary;
+            }
         }
         &:hover {
             @include hover-vignet;
         }
     }
 }
+
+@media (min-width: 768px) {
+    .functioning__contenair {
+        &__card {
+            height: 5em;
+            margin: 3em auto;
+            &__text {
+                font-size: 1.3rem;
+            }
+            &__icon {
+                font-size: 1.6rem;
+            }
+        }
+}
+}
+
+@media (min-width: 1060px) {
+    .functioning__contenair {
+        &__title {
+            margin:0;
+        }
+        &__card {
+            margin:2em 1em;
+            padding: 1.5em;
+            width: 21em;
+            height: 10em;
+            &__text {
+                font-size: 1.2rem;
+            }
+            &__number {
+                left: 5.2em;
+                bottom: 5.8em;
+                font-size: 1.5rem;
+            }
+            &__icon {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+
 
 
 

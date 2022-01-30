@@ -15,6 +15,20 @@
 
 .functioning {
     max-width: $max-with-vignet;
-    margin: 0 auto;
-    padding: 1rem 0;
+    margin: auto;
+    padding: 1rem;
+}
+
+@media (min-width: 1060px) {
+    .functioning{
+        @include flex-center;
+        max-width: 1400px;
+        flex-direction: column;
+    }
+    .functioning__contenair {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
 }
