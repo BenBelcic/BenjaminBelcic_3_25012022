@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    list-style: none;
 }
 
 h1 {
@@ -17,7 +18,13 @@ h3 {
 
 a {
     text-decoration: none;
+    color: white;
 }
+
+a:hover {
+    cursor: pointer;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 

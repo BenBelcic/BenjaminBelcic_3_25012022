@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 * {
   box-sizing: border-box;
+  list-style: none;
 }
 
 h1 {
@@ -19,6 +20,11 @@ h3 {
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 .home-title {
@@ -41,11 +47,40 @@ a {
 }
 
 .functioning {
-  max-width: 620px;
+  max-width: 768px;
   margin: auto;
   padding: 1rem;
 }
 
+footer {
+  padding: 0.4rem 1rem;
+  background-color: #363636;
+  color: white;
+}
+.nav__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__title__text {
+  width: 70%;
+  text-align: center;
+  margin: 0.4rem;
+  color: black;
+  font-size: none;
+}
+.nav__title2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__title2__text {
+  width: 90%;
+  text-align: center;
+  margin: 0.4rem;
+  color: black;
+  font-size: none;
+}
 .nav__btn {
   display: flex;
   justify-content: center;
@@ -71,7 +106,6 @@ a {
   filter: brightness(1.1);
   cursor: pointer;
 }
-
 .home-title__text {
   margin: 0.6em 0 0.3em 0;
 }
@@ -85,34 +119,10 @@ a {
   right: 7.7em;
 }
 
-.nav__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav__title__text {
-  width: 70%;
-  text-align: center;
-  margin: 0.4rem;
-  color: black;
-  font-size: none;
-}
-.nav__title2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav__title2__text {
-  width: 90%;
-  text-align: center;
-  margin: 0.4rem;
-  color: black;
-  font-size: none;
+.functioning__title {
+  padding-left: 2%;
 }
 
-.functioning__contenair__title {
-  margin-left: 5%;
-}
 .functioning__contenair__card {
   display: flex;
   justify-content: center;
@@ -156,8 +166,26 @@ a {
   filter: brightness(1.02);
   cursor: pointer;
 }
+.footer__title {
+  font-family: "Shrikhand", "Franklin Gothic Medium", sans-serif;
+  font-size: 1.2rem;
+  padding: 0 0 0.1rem 2%;
+}
+.footer__list {
+  margin-left: -30px;
+}
+.footer__list__text {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.8em;
+  margin: -1em 0;
+}
+.footer__list__text__icon {
+  width: 1.2em;
+}
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav__btn {
     height: 3em;
     border-radius: 5em;
@@ -168,13 +196,13 @@ a {
     margin: 3em auto;
   }
   .functioning__contenair__card__text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .functioning__contenair__card__icon {
     font-size: 1.6rem;
   }
 }
-@media (min-width: 1060px) {
+@media screen and (min-width: 1060px) {
   .functioning {
     display: flex;
     justify-content: center;
@@ -188,26 +216,32 @@ a {
     justify-content: space-evenly;
     width: 100%;
   }
-  .functioning__contenair__title {
-    margin: 0;
-  }
   .functioning__contenair__card {
     margin: 2em 1em;
     padding: 1.5em;
     width: 21em;
     height: 10em;
   }
-  .functioning__contenair__card__text {
-    font-size: 1.2rem;
-  }
   .functioning__contenair__card__number {
-    left: 5.2em;
+    left: 6em;
     bottom: 5.8em;
     font-size: 1.5rem;
   }
-  .functioning__contenair__card__icon {
-    font-size: 1.6rem;
+  footer {
+    padding: 0.4rem 0 2rem 0;
+  }
+  .footer__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 3em;
+  }
+  .footer__title {
+    text-align: center;
+    padding-bottom: 1rem;
   }
 }
+
 
 /*# sourceMappingURL=style.css.map */
