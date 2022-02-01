@@ -16,28 +16,28 @@
 .functioning {
     max-width: $max-with-vignet;
     margin: auto;
-    padding: 1rem;
+    padding: $padding-horizontal-containers;
+    @media screen and (min-width: 1060px) {
+            @include flex-center;
+            max-width: 1400px;
+            flex-direction: column;
+    }
+}
+
+.restaurants {
+    width: 100%;
+    padding: 2rem $padding-horizontal-containers;
+    background-color: $softgray;
 }
 
 footer {
-    padding: .4rem 1rem;
+    padding: .4rem $padding-left-titles 1rem $padding-left-titles;
     background-color: $gray-footer;
     color: white;
-}
-
-@media screen and (min-width: 1060px) {
-    .functioning{
-        @include flex-center;
-        max-width: 1400px;
-        flex-direction: column;
-    }
-    .functioning__contenair {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    footer {
+    @media screen and (min-width: $tablette) {
+            padding-bottom: 2rem;
+        }
+    @media screen and (min-width: $desktop) {
         padding:.4rem 0 2rem 0;
     }
 }

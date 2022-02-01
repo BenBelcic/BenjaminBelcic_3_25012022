@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <title>Ohmyfood</title>
-    <link rel="icon" href="asset/images/logo/ohmyfood.png">
+    <link rel="icon" href="https://img.icons8.com/ios-glyphs/30/000000/food.png"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="asset/normalize.css">
     <link rel="stylesheet" href="asset/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="home">
         <div class="home-title">
             <h1 class="home-title__text">ohmyfood</h1>
         </div>
@@ -22,32 +22,71 @@
         <nav class="nav">
             <div class="nav__title"><h2 class="nav__title__text">Réservez le menu qui vous convient</h2></div>
             <div class="nav__title2"><h3 class="nav__title2__text">Découvrez des restaurants d'esception, séléctionnés par nos soins.</h3></div>
-            <form class="nav__btn__link" action="#restaurants">
+            <form class="nav__btn__link" action="#menu-restaurants">
                 <button class="nav__btn" type="submit"><p class="nav__btn__text">Explorer nos restaurants</p></button>
             </form>
         </nav>
         <article class="functioning">
             <h2 class="functioning__title">Fonctionnement</h2>
-            <div class="functioning__contenair">
-                <div class="functioning__contenair__card">
-                    <div class="functioning__contenair__card__number"><p>1</p></div>
-                    <div class="functioning__contenair__card__icon"><span class="fas fa-mobile-alt"></span></div>
-                    <div class="functioning__contenair__card__text"><p>Choississez un restaurant</p></div>
+            <div class="functioning__container">
+                <div class="functioning__container__card">
+                    <div class="functioning__container__card__number"><p>1</p></div>
+                    <div class="functioning__container__card__icon functioning__container__card__icon--color-inactive"><span class="fas fa-mobile-alt"></span></div>
+                    <div class="functioning__container__card__text"><p>Choississez un restaurant</p></div>
                 </div>
-                <div class="functioning__contenair__card">
-                    <div class="functioning__contenair__card__number"><p>2</p></div>
-                    <div class="functioning__contenair__card__icon"><span class="fas fa-list-ul"></span></div>
-                    <div class="functioning__contenair__card__text"><p>Composez votre menu</p></div>
+                <div class="functioning__container__card">
+                    <div class="functioning__container__card__number"><p>2</p></div>
+                    <div class="functioning__container__card__icon functioning__container__card__icon--color-inactive"><span class="fas fa-list-ul"></span></div>
+                    <div class="functioning__container__card__text"><p>Composez votre menu</p></div>
                 </div>
-                <div class="functioning__contenair__card functioning__contenair__card--bgcolor">
-                    <div class="functioning__contenair__card__number"><p>3</p></div>
-                    <div class="functioning__contenair__card__icon functioning__contenair__card__icon--color"><span class="fas fa-store"></span></div>
-                    <div class="functioning__contenair__card__text functioning__card__text"><p>Dégustez au restaurant</p></div>
+                <div class="functioning__container__card functioning__container__card--bgcolor">
+                    <div class="functioning__container__card__number"><p>3</p></div>
+                    <div class="functioning__container__card__icon functioning__container__card__icon--color-active"><span class="fas fa-store"></span></div>
+                    <div class="functioning__container__card__text functioning__card__text"><p>Dégustez au restaurant</p></div>
                 </div>
         </div>
         </article>
     </header>
-    <a id="restaurants"></a>
+    <a id="menu-restaurants"></a>
+    <section class="restaurants">
+        <h2 class="restaurants__title">Restaurants</h2>
+        <div class="restaurants__container">
+            <a href="menu_1" class="restaurants__container__card">
+                <img src="asset/images/restaurants/menu_1.jpg" alt="photo menu" class="restaurants__container__card__photo restaurants__container__card__photo--position"/>
+                <div class="restaurants__container__card__text">
+                    <h3 class="restaurants__container__card__text__name">La palette du goût</h3>
+                    <p class="restaurants__container__card__text__place">Menilmontant</p>
+                </div>
+                <div class="restaurants__container__card__icon"><span class="far fa-heart"></span></div>
+                <p class="restaurants__container__card__new">Nouveau</p>
+            </a>
+            <a href="menu_2" class="restaurants__container__card">
+                <img src="asset/images/restaurants/menu_2.jpg" alt="photo menu" class="restaurants__container__card__photo restaurants__container__card__photo--position2"/>
+                <div class="restaurants__container__card__text">
+                    <h3 class="restaurants__container__card__text__name">La note enchantée</h3>
+                    <p class="restaurants__container__card__text__place">Charonne</p>
+                </div>
+                <div class="restaurants__container__card__icon"><span class="far fa-heart"></span></div>
+                <p class="restaurants__container__card__new">Nouveau</p>
+            </a>
+            <a href="menu_3" class="restaurants__container__card">
+                <img src="asset/images/restaurants/menu_3.jpg" alt="photo menu" class="restaurants__container__card__photo restaurants__container__card__photo--position"/>
+                <div class="restaurants__container__card__text">
+                    <h3 class="restaurants__container__card__text__name">A la française</h3>
+                    <p class="restaurants__container__card__text__place">Cité Rouge</p>
+                </div>
+                <div class="restaurants__container__card__icon"><span class="far fa-heart"></span></div>
+            </a>
+            <a href="menu_4" class="restaurants__container__card">
+                <img src="asset/images/restaurants/menu_4.jpg" alt="photo menu" class="restaurants__container__card__photo restaurants__container__card__photo--position"/>
+                <div class="restaurants__container__card__text">
+                    <h3 class="restaurants__container__card__text__name">Le délice des sens</h3>
+                    <p class="restaurants__container__card__text__place">Folie-Méricourt</p>
+                </div>
+                <div class="restaurants__container__card__icon"><span class="far fa-heart"></span></div>
+            </a>
+        </div>
+    </section>
     <footer>
         <h4 class="footer__title">ohmyfood</h4>
             <ul class="footer__list">
@@ -59,3 +98,4 @@
     </footer>
 
 </body>
+</html>

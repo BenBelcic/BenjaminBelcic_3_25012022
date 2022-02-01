@@ -3,6 +3,11 @@
     list-style: none;
 }
 
+body {
+    max-width: 1435px;
+    margin: auto;
+}
+
 h1 {
     font-family: $font-primary;
 }

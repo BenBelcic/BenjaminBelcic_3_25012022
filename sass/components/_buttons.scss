@@ -1,4 +1,9 @@
 .nav__btn {
+    @media (min-width: 768px) {
+            height: 3em;
+            border-radius: 5em;
+            font-size: 1.3rem;
+    }
     @include nav-titles (100%, #fff);
     width: 58%;
     max-width: $max-width-btn;
@@ -12,13 +17,5 @@
         @include box-shadow ($color: darken($shadowgray, 25%));
         filter: brightness(1.1);
         cursor: pointer;
-    }
-}
-
-@media (min-width: 768px) {
-    .nav__btn {
-        height: 3em;
-        border-radius: 5em;
-        font-size: 1.3rem;
     }
 }

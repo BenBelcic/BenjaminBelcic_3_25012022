@@ -25,17 +25,17 @@
 
 .functioning{
     &__title {
-        padding-left: 2%;
+        padding-left: $padding-left-titles;
     }
 }
 
-.functioning__contenair {
+.functioning__container {
     &__card {
         @include flex-center;
         position: relative;
         margin: 1.5em auto 1.5em 10%;
         padding: .5em 2.2em .5em 2.2em;
-        width: 82%;
+        width: 84%;
         border-radius: $border-radius-vignet;
         background-color: $softgray;
         @include box-shadow;
@@ -45,6 +45,7 @@
         &__text {
             width: 12em;
             font-weight: 600;
+            font-size: .9rem;
         }
         &__number {
             @include flex-center;
@@ -59,8 +60,12 @@
         }
         &__icon {
             width: 2em;
-            &--color {
+            font-size: 125%;
+            &--color-active {
                 color: $color-primary;
+            }
+            &--color-inactive {
+                color: darken($darkgray, 40%);
             }
         }
         &:hover {
@@ -69,8 +74,8 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-    .functioning__contenair {
+@media screen and (min-width: $tablette) {
+    .functioning__container {
         &__card {
             height: 5em;
             margin: 3em auto;
@@ -81,11 +86,15 @@
                 font-size: 1.6rem;
             }
         }
-}
+    }
 }
 
-@media screen and (min-width: 1060px) {
-    .functioning__contenair {
+@media screen and (min-width: $desktop) {
+    .functioning__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
         &__card {
             margin:2em 1em;
             padding: 1.5em;
