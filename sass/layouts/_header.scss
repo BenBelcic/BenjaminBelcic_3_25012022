@@ -1,6 +1,18 @@
-.home-title {
-    &__text {
-        @include home-title__text
+.heading {
+    &__title {
+        &__icon{
+            position: absolute;
+            left: 2rem;
+            color: black;
+            font-size: 1.5rem;
+        }
+        &__text {
+            @include heading__title__text
+        }
+    }
+    &__photo {
+        max-width: 100%;
+        object-fit: cover;
     }
 }
 

@@ -1,4 +1,4 @@
-.home-title {
+.heading__title {
     @include flex-center;
 }
 
@@ -8,15 +8,20 @@
     background-color: $darkgray;
 }
 
+.menu {
+    @include padding-containers;
+    background-color: $softgray;
+}
+
 .nav {
-    padding: 2em 0;
+    @include padding-containers;
     background-color: $softgray;
 }
 
 .functioning {
     max-width: $max-with-vignet;
     margin: auto;
-    padding: $padding-horizontal-containers;
+    @include padding-containers;
     @media screen and (min-width: 1060px) {
             @include flex-center;
             max-width: 1400px;
@@ -26,7 +31,7 @@
 
 .restaurants {
     width: 100%;
-    padding: 2rem $padding-horizontal-containers;
+    @include padding-containers;
     background-color: $softgray;
 }
 

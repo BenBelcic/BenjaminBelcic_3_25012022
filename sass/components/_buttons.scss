@@ -5,10 +5,10 @@
             font-size: 1.3rem;
     }
     @include nav-titles (100%, #fff);
-    width: 58%;
     max-width: $max-width-btn;
     margin: 2rem auto;
-    padding: .6em 0;
+    padding-top: .6em;
+    padding-bottom: .6em;
     border-radius: $border-radius-btn;
     background: linear-gradient($color-secondary, $color-primary);
     @include box-shadow;
@@ -17,5 +17,16 @@
         @include box-shadow ($color: darken($shadowgray, 25%));
         filter: brightness(1.1);
         cursor: pointer;
+    }
+    &__home {
+        width: 58%;
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+    &__menu {
+        margin-bottom: 3.5rem;
+        margin-top: 1.5rem;
+        padding-left: 3.5em;
+        padding-right: 3.5em;
     }
 }

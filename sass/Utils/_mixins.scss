@@ -4,7 +4,11 @@
     align-items: center;
 }
 
-@mixin home-title__text {
+@mixin padding-containers {
+    padding: $padding-vertical-containers $padding-horizontal-containers;
+}
+
+@mixin heading__title__text {
         margin: .6em 0 .3em 0;
 }
 
