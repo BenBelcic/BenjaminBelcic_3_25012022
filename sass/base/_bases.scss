@@ -3,13 +3,27 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     max-width: 1435px;
     margin: auto;
 }
 
+.body-pages {
+    @media screen and (min-width: $tablette) {
+        @include max-width-margin;
+    }
+    @media screen and (min-width: $desktop) {
+        @include max-width-margin($desktop);
+    }
+}
+
 h1 {
     font-family: $font-primary;
+    font-size: 30px;
 }
 
 h2, h3, p {

@@ -1,5 +1,6 @@
 .heading {
     &__title {
+        position: relative;
         &__icon{
             position: absolute;
             left: 2rem;
@@ -11,8 +12,16 @@
         }
     }
     &__photo {
-        max-width: 100%;
+        @media screen and (min-width: $tablette){
+            height: map-get($height,tablette);
+        }
+        @media screen and (min-width: $desktop){
+            height: map-get($height,desktop);
+        }
+        width: 100%;
+        height: map-get($height,mobile);
         object-fit: cover;
+        object-position: 50% 65%;
     }
 }
 
@@ -48,7 +57,7 @@
         margin: 1.5em auto 1.5em 10%;
         padding: .5em 2.2em .5em 2.2em;
         width: 84%;
-        border-radius: $border-radius-vignet;
+        border-radius: map-get($border-radius,vignet);
         background-color: $softgray;
         @include box-shadow;
         &--bgcolor {

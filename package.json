@@ -4,10 +4,12 @@
   "description": "work p3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:asset/style.css"
+    "sass": "sass --watch ./sass/main.scss:asset/style.css",
+    "prefix": "postcss asset/style.css --use autoprefixer -d asset/prefixed/"
   },
   "author": "Benjamin Belcic",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "devDependencies": {
     "sass": "^1.49.0"
   }

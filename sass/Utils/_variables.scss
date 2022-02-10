@@ -1,4 +1,4 @@
-$color-primary: #9356DC ;
+$color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
@@ -7,19 +7,21 @@ $softgray: rgb(246,246,246);
 $shadowgray: #d6d6d6;
 $gray-footer: #363636;
 
-$border-radius-vignet: 1.3em;
-$border-radius-btn: 2em;
+$border-radius:(vignet:1.3em, menu:1em, btn:2em);
+$padding-horizontal-btn: (home:.5em, menu:3.5em);
 
 $font-primary: 'Shrikhand','Franklin Gothic Medium', sans-serif;
 $font-secondary: 'Roboto','Franklin Gothic Medium', sans-serif;
 
+$tablette: 768px;
+$desktop: 1060px;
+
 $max-width-btn: 400px;
-$max-with-vignet: 768px;
+$max-with-vignet: $tablette;
 
 $margin-heading-restaurants-text: .5em 0;
-$padding-left-titles: 6%;
+$padding-left-titles: 5%;
 $padding-vertical-containers: 2rem;
 $padding-horizontal-containers: 0rem;
 
-$tablette: 768px;
-$desktop: 1060px;
+$height:(tablette:450px, desktop:650px, mobile:270px)

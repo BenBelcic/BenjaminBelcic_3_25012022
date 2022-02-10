@@ -9,8 +9,11 @@
 }
 
 .menu {
-    @include padding-containers;
+    position:relative;
+    margin-top: -50px;
+    @include padding-containers(1rem);
     background-color: $softgray;
+    border-radius: 40px 40px 0 0;
 }
 
 .nav {
@@ -22,7 +25,7 @@
     max-width: $max-with-vignet;
     margin: auto;
     @include padding-containers;
-    @media screen and (min-width: 1060px) {
+    @media screen and (min-width: $desktop) {
             @include flex-center;
             max-width: 1400px;
             flex-direction: column;

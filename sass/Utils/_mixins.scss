@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-@mixin padding-containers {
+@mixin padding-containers ($padding-vertical-containers:2rem){
     padding: $padding-vertical-containers $padding-horizontal-containers;
 }
 
@@ -36,3 +36,14 @@
         filter: brightness(1.03);
         cursor: pointer;
 }
+
+@mixin max-width-margin ($max-width: $tablette){
+    max-width: $max-width;
+    margin: auto;
+}
+
+@mixin position-containers {
+    @include flex-center;
+    @include max-width-margin;
+}
+

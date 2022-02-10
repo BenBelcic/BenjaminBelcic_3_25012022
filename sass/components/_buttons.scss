@@ -1,5 +1,5 @@
 .nav__btn {
-    @media (min-width: 768px) {
+    @media screen and (min-width: $tablette) {
             height: 3em;
             border-radius: 5em;
             font-size: 1.3rem;
@@ -9,7 +9,7 @@
     margin: 2rem auto;
     padding-top: .6em;
     padding-bottom: .6em;
-    border-radius: $border-radius-btn;
+    border-radius: map-get($border-radius,btn);
     background: linear-gradient($color-secondary, $color-primary);
     @include box-shadow;
     border: none;
@@ -20,13 +20,14 @@
     }
     &__home {
         width: 58%;
-        padding-left: .5em;
-        padding-right: .5em;
+        padding-left: map-get($padding-horizontal-btn,home);
+        padding-right: map-get($padding-horizontal-btn,home);
     }
     &__menu {
         margin-bottom: 3.5rem;
         margin-top: 1.5rem;
-        padding-left: 3.5em;
-        padding-right: 3.5em;
+        padding-left: map-get($padding-horizontal-btn,menu);
+        padding-right: map-get($padding-horizontal-btn,menu);
     }
 }
+
