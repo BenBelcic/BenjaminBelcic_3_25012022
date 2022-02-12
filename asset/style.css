@@ -168,7 +168,7 @@ footer {
   height: 100%;
   left: 0;
   bottom: 0;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-name: loading;
 }
 
@@ -193,7 +193,7 @@ footer {
   border: 9px solid transparent;
   border-color: #9356DC transparent #FF79DA transparent;
   transform: scale(0);
-  animation: loader 0.95s cubic-bezier(0.68, 0.15, 0.27, 0.91) 2.3;
+  animation: loader 0.75s cubic-bezier(0.68, 0.15, 0.27, 0.91) 1.9;
 }
 
 @keyframes loader {
@@ -442,13 +442,43 @@ footer {
   font-family: "Shrikhand", "Franklin Gothic Medium", sans-serif;
   font-size: 1.7rem;
 }
+@media screen and (max-width: 500px) {
+  .menu__title__text {
+    font-size: 6vw;
+  }
+}
 .menu__title__icon {
   font-size: 1.7rem;
+}
+@media screen and (max-width: 500px) {
+  .menu__title__icon {
+    font-size: 6vw;
+  }
 }
 
 .menu__food__title {
   padding-left: 5%;
   margin-bottom: 0.3em;
+}
+@media screen and (max-width: 500px) {
+  .menu__food__title {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu__food__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin: 1.5em auto 0 auto;
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 1060px) {
+  .menu__food__title {
+    font-size: 1.7em;
+  }
 }
 .menu__food__underline {
   width: 2.6rem;
@@ -456,13 +486,28 @@ footer {
   margin-left: 5%;
   background-color: #99E2D0;
 }
+@media screen and (min-width: 768px) {
+  .menu__food__underline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.6rem;
+    border-radius: 2em;
+    margin: 0.3em auto;
+  }
+}
+
 .menu__food__card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
   position: relative;
   width: 94%;
   max-width: 500px;
-  height: 66px;
+  aspect-ratio: 10.9/2.1;
   margin: 1em auto;
-  padding: 0 1em;
+  padding: 0 0 0 0.7em;
+  overflow: hidden;
   background-color: white;
   border-radius: 1em;
   box-shadow: 0px 0.4rem 0.7rem #d6d6d6;
@@ -470,33 +515,135 @@ footer {
 @media screen and (min-width: 1060px) {
   .menu__food__card {
     max-width: 600px;
-    height: 100px;
     margin: 1.5em auto;
   }
 }
-.menu__food__card__text1 {
-  position: absolute;
-  top: 0.7em;
-  margin: 0;
-  font-weight: 700;
-  font-size: 1.08em;
+.menu__food__card:hover .menu__food__card__legend2 {
+  right: 0;
 }
-@media screen and (min-width: 1060px) {
-  .menu__food__card__text1 {
-    top: 0.9em;
-    font-size: 1.3em;
+.menu__food__card:hover .menu__food__card__legend {
+  width: 60%;
+}
+.menu__food__card:hover .menu__food__card__legend2__checkbox__icon {
+  transform: rotate(2turn);
+}
+.menu__food__card__legend {
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  transition: all 0.5s;
+  margin: auto 0;
+}
+.menu__food__card__legend__text1 {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  font-size: 1.4em;
+}
+@media screen and (max-width: 500px) {
+  .menu__food__card__legend__text1 {
+    font-size: 4.4vw;
   }
 }
-.menu__food__card__text2 {
-  position: absolute;
-  margin: 0;
-  bottom: 0.7em;
-  font-size: 0.95em;
+@media screen and (min-width: 768px) {
+  .menu__food__card__legend__text1 {
+    font-size: 1.5em;
+  }
 }
 @media screen and (min-width: 1060px) {
-  .menu__food__card__text2 {
+  .menu__food__card__legend__text1 {
+    font-size: 1.6em;
+  }
+}
+.menu__food__card__legend__text2 {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  font-size: 1.15em;
+}
+@media screen and (max-width: 500px) {
+  .menu__food__card__legend__text2 {
+    font-size: 3.82vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu__food__card__legend__text2 {
     font-size: 1.2em;
-    bottom: 1em;
+  }
+}
+@media screen and (min-width: 1060px) {
+  .menu__food__card__legend__text2 {
+    font-size: 1.4em;
+  }
+}
+
+.menu__food__card__legend2 {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  position: absolute;
+  right: -20%;
+  width: 40%;
+  height: 100%;
+  transition: all 0.5s;
+}
+.menu__food__card__legend2__price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  font-weight: 700;
+  padding-bottom: 8.1%;
+  font-size: 1.33em;
+}
+@media screen and (max-width: 500px) {
+  .menu__food__card__legend2__price {
+    font-size: 4.3vw;
+    padding-bottom: 7.8%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu__food__card__legend2__price {
+    font-size: 1.43em;
+  }
+}
+@media screen and (min-width: 1060px) {
+  .menu__food__card__legend2__price {
+    font-size: 1.53em;
+  }
+}
+.menu__food__card__legend2__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: #99E2D0;
+  color: white;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.menu__food__card__legend2__checkbox__icon {
+  font-size: 1.2em;
+  transform: rotate(0turn);
+  transition: all 0.5s;
+}
+@media screen and (min-width: 768px) {
+  .menu__food__card__legend2__checkbox__icon {
+    font-size: 1.6em;
+  }
+}
+@media screen and (min-width: 1060px) {
+  .menu__food__card__legend2__checkbox__icon {
+    font-size: 1.8em;
   }
 }
 

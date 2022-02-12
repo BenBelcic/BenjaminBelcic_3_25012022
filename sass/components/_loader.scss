@@ -8,7 +8,7 @@
     height: 100%;
     left:0;
     bottom:0;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: loading; 
 }
 
@@ -37,7 +37,7 @@
     border: 9px solid transparent;
     border-color: $color-primary transparent $color-secondary transparent;
     transform: scale(0);
-    animation: loader .95s cubic-bezier(.68,.15,.27,.91) 2.3;
+    animation: loader .75s cubic-bezier(.68,.15,.27,.91) 1.9;
   }
   @keyframes loader {
     0% {
