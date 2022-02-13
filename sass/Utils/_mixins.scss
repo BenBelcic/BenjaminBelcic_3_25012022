@@ -47,3 +47,10 @@
     @include max-width-margin;
 }
 
+@mixin delaycards-start {
+    background-color: transparent;
+        color: transparent;
+        border-color: transparent;
+        box-shadow: 0px .4rem .7rem transparent;
+}
+

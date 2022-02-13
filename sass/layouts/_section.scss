@@ -195,6 +195,21 @@
     }
 }
 
+@keyframes delaycards {
+    0% {
+        @include delaycards-start;
+    }
+    90%{}
+    100% {}
+}
+
+@for $i from 1 through 10 {
+    .d#{$i}{
+        animation: delaycards .15s $i*0.3s;
+        animation-fill-mode: backwards;
+    }
+}
+
 .menu__food__card__legend2 {
     display: flex;
     align-items: flex-end;

@@ -583,6 +583,64 @@ footer {
   }
 }
 
+@keyframes delaycards {
+  0% {
+    background-color: transparent;
+    color: transparent;
+    border-color: transparent;
+    box-shadow: 0px 0.4rem 0.7rem transparent;
+  }
+}
+.d1 {
+  animation: delaycards 0.15s 0.3s;
+  animation-fill-mode: backwards;
+}
+
+.d2 {
+  animation: delaycards 0.15s 0.6s;
+  animation-fill-mode: backwards;
+}
+
+.d3 {
+  animation: delaycards 0.15s 0.9s;
+  animation-fill-mode: backwards;
+}
+
+.d4 {
+  animation: delaycards 0.15s 1.2s;
+  animation-fill-mode: backwards;
+}
+
+.d5 {
+  animation: delaycards 0.15s 1.5s;
+  animation-fill-mode: backwards;
+}
+
+.d6 {
+  animation: delaycards 0.15s 1.8s;
+  animation-fill-mode: backwards;
+}
+
+.d7 {
+  animation: delaycards 0.15s 2.1s;
+  animation-fill-mode: backwards;
+}
+
+.d8 {
+  animation: delaycards 0.15s 2.4s;
+  animation-fill-mode: backwards;
+}
+
+.d9 {
+  animation: delaycards 0.15s 2.7s;
+  animation-fill-mode: backwards;
+}
+
+.d10 {
+  animation: delaycards 0.15s 3s;
+  animation-fill-mode: backwards;
+}
+
 .menu__food__card__legend2 {
   display: flex;
   align-items: flex-end;
