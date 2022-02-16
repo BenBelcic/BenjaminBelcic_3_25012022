@@ -34,10 +34,22 @@
 
 .nav {
     &__title {
-        @include nav-titles;
+        @include flex-center;
+        &__text {
+            width: 70%;
+            text-align: center;
+            margin: .4rem;
+            color: black;
+        }
     }
     &__title2 {
-        @include nav-titles(90%);
+        @include flex-center;
+        &__text {
+            width: 90%;
+            text-align: center;
+            margin: .4rem;
+            color: black;
+        }
     }
 }
 

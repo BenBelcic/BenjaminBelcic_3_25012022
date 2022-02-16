@@ -20,17 +20,6 @@
     box-shadow: 0px .4rem .7rem $color;
 }
 
-@mixin nav-titles ($width: 70%, $color: black, $font-size: none){
-    @include flex-center;   
-    &__text {
-        width: $width;
-        text-align: center;
-        margin: .4rem;
-        color: $color;
-        font-size: $font-size;
-    }
-}
-
 @mixin hover-vignet {
         @include box-shadow ($color: darken($shadowgray, 25%));
         filter: brightness(1.03);
