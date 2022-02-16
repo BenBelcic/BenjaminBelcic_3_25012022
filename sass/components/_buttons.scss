@@ -50,11 +50,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: .9px black;
     transition:all .4s;
  &:hover {
    background-image: linear-gradient($color-secondary, $color-primary);
-   -webkit-text-stroke: .85px black;
+   -webkit-text-stroke: .3px $softgray;
    background-position: center;
    cursor: pointer;
  }
