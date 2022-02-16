@@ -1,3 +1,14 @@
+.heading__title__icon {
+    position: absolute;
+    left: 2rem;
+    color: black;
+    font-size: 1.5rem;
+    transition: all .2s;
+    &:hover {
+        transform: scale(1.15);
+    }
+}
+
 .nav__btn {
     @media screen and (min-width: $tablette) {
             height: 3em;
@@ -13,6 +24,7 @@
     background: linear-gradient($color-secondary, $color-primary);
     @include box-shadow;
     border: none;
+    font-family: $font-secondary;
     &:hover {
         @include box-shadow ($color: darken($shadowgray, 25%));
         filter: brightness(1.1);
@@ -30,4 +42,21 @@
         padding-right: map-get($padding-horizontal-btn,menu);
     }
 }
+
+.restaurants__container__card__icon span, .menu__title__icon span {
+    background-repeat: no-repeat;
+    background-position: 0 25px;
+    background-origin: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke: 1px black;
+    transition:all .4s;
+ &:hover {
+   background-image: linear-gradient($color-secondary, $color-primary);
+   -webkit-text-stroke: .85px black;
+   background-position: center;
+   cursor: pointer;
+ }
+}
+
 

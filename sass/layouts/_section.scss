@@ -143,12 +143,15 @@
         margin:1.5em auto;}
     &:hover .menu__food__card__legend2{
         right: 0;
+        cursor: pointer;
     }
     &:hover .menu__food__card__legend{
         width: 60%;
+        cursor: pointer;
     }
     &:hover .menu__food__card__legend2__checkbox__icon{
         transform: rotate(2turn);
+        cursor: pointer;
     }
     &__legend {
         display: inline-flex;
@@ -197,7 +200,8 @@
 
 @keyframes delaycards {
     0% {
-        @include delaycards-start;
+        opacity: 0;
+        transform: translate(0,-4px);
     }
     90%{}
     100% {}
@@ -205,7 +209,7 @@
 
 @for $i from 1 through 10 {
     .d#{$i}{
-        animation: delaycards .15s $i*0.3s;
+        animation: delaycards .7s $i*0.35s;
         animation-fill-mode: backwards;
     }
 }

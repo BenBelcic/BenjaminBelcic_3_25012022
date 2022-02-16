@@ -114,6 +114,17 @@ footer {
   }
 }
 
+.heading__title__icon {
+  position: absolute;
+  left: 2rem;
+  color: black;
+  font-size: 1.5rem;
+  transition: all 0.2s;
+}
+.heading__title__icon:hover {
+  transform: scale(1.15);
+}
+
 .nav__btn {
   display: flex;
   justify-content: center;
@@ -126,6 +137,7 @@ footer {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 0.4rem 0.7rem #d6d6d6;
   border: none;
+  font-family: "Roboto", "Franklin Gothic Medium", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .nav__btn {
@@ -156,6 +168,22 @@ footer {
   margin-top: 1.5rem;
   padding-left: 3.5em;
   padding-right: 3.5em;
+}
+
+.restaurants__container__card__icon span, .menu__title__icon span {
+  background-repeat: no-repeat;
+  background-position: 0 25px;
+  background-origin: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px black;
+  transition: all 0.4s;
+}
+.restaurants__container__card__icon span:hover, .menu__title__icon span:hover {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-text-stroke: 0.85px black;
+  background-position: center;
+  cursor: pointer;
 }
 
 .loading {
@@ -207,14 +235,11 @@ footer {
 .heading__title {
   position: relative;
 }
-.heading__title__icon {
-  position: absolute;
-  left: 2rem;
-  color: black;
-  font-size: 1.5rem;
-}
 .heading__title__text {
   margin: 0.6em 0 0.3em 0;
+}
+.heading__title__text__pages {
+  transform: scale(0.43);
 }
 .heading__photo {
   width: 100%;
@@ -520,12 +545,15 @@ footer {
 }
 .menu__food__card:hover .menu__food__card__legend2 {
   right: 0;
+  cursor: pointer;
 }
 .menu__food__card:hover .menu__food__card__legend {
   width: 60%;
+  cursor: pointer;
 }
 .menu__food__card:hover .menu__food__card__legend2__checkbox__icon {
   transform: rotate(2turn);
+  cursor: pointer;
 }
 .menu__food__card__legend {
   display: inline-flex;
@@ -585,59 +613,57 @@ footer {
 
 @keyframes delaycards {
   0% {
-    background-color: transparent;
-    color: transparent;
-    border-color: transparent;
-    box-shadow: 0px 0.4rem 0.7rem transparent;
+    opacity: 0;
+    transform: translate(0, -4px);
   }
 }
 .d1 {
-  animation: delaycards 0.15s 0.3s;
+  animation: delaycards 0.7s 0.35s;
   animation-fill-mode: backwards;
 }
 
 .d2 {
-  animation: delaycards 0.15s 0.6s;
+  animation: delaycards 0.7s 0.7s;
   animation-fill-mode: backwards;
 }
 
 .d3 {
-  animation: delaycards 0.15s 0.9s;
+  animation: delaycards 0.7s 1.05s;
   animation-fill-mode: backwards;
 }
 
 .d4 {
-  animation: delaycards 0.15s 1.2s;
+  animation: delaycards 0.7s 1.4s;
   animation-fill-mode: backwards;
 }
 
 .d5 {
-  animation: delaycards 0.15s 1.5s;
+  animation: delaycards 0.7s 1.75s;
   animation-fill-mode: backwards;
 }
 
 .d6 {
-  animation: delaycards 0.15s 1.8s;
+  animation: delaycards 0.7s 2.1s;
   animation-fill-mode: backwards;
 }
 
 .d7 {
-  animation: delaycards 0.15s 2.1s;
+  animation: delaycards 0.7s 2.45s;
   animation-fill-mode: backwards;
 }
 
 .d8 {
-  animation: delaycards 0.15s 2.4s;
+  animation: delaycards 0.7s 2.8s;
   animation-fill-mode: backwards;
 }
 
 .d9 {
-  animation: delaycards 0.15s 2.7s;
+  animation: delaycards 0.7s 3.15s;
   animation-fill-mode: backwards;
 }
 
 .d10 {
-  animation: delaycards 0.15s 3s;
+  animation: delaycards 0.7s 3.5s;
   animation-fill-mode: backwards;
 }
 
@@ -723,6 +749,12 @@ footer {
 }
 .footer__list__text__icon {
   width: 1.2em;
+}
+.footer__list__text__contact {
+  transition: all 0.2s;
+}
+.footer__list__text__contact:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 768px) {

@@ -1,16 +1,13 @@
 .heading {
     &__title {
         position: relative;
-        &__icon{
-            position: absolute;
-            left: 2rem;
-            color: black;
-            font-size: 1.5rem;
-        }
         &__text {
-            @include heading__title__text
+            @include heading__title__text;
+            &__pages {
+                transform: scale(.43);
+            }
         }
-    }
+        }
     &__photo {
         @media screen and (min-width: $tablette){
             height: map-get($height,tablette);
