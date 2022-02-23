@@ -140,16 +140,28 @@
     @include box-shadow;
     @media screen and (min-width: $desktop) {
         max-width: nth($max-width-card, 2);
-        margin:1.5em auto;}
-    &:hover .menu__food__card__legend2{
+        margin:1.5em auto;
+        &:hover .menu__food__card__legend2{
+            right: 0;
+            cursor: pointer;
+        }
+        &:hover .menu__food__card__legend{
+            width: 60%;
+            cursor: pointer;
+        }
+        &:hover .menu__food__card__legend2__checkbox__icon{
+            transform: rotate(2turn);
+            cursor: pointer;
+        }}
+    &:active .menu__food__card__legend2{
         right: 0;
         cursor: pointer;
     }
-    &:hover .menu__food__card__legend{
+    &:active .menu__food__card__legend{
         width: 60%;
         cursor: pointer;
     }
-    &:hover .menu__food__card__legend2__checkbox__icon{
+    &:active .menu__food__card__legend2__checkbox__icon{
         transform: rotate(2turn);
         cursor: pointer;
     }

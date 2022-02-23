@@ -69,9 +69,6 @@
         border-radius: map-get($border-radius,vignet);
         background-color: $softgray;
         @include box-shadow;
-        &--bgcolor {
-            background-color: lighten($color-primary,33%);
-        }
         &__text {
             width: 12em;
             font-weight: 600;
@@ -91,15 +88,13 @@
         &__icon {
             width: 2em;
             font-size: 125%;
-            &--color-active {
-                color: $color-primary;
-            }
-            &--color-inactive {
-                color: darken($darkgray, 40%);
-            }
+            color: darken($darkgray, 40%);
         }
-        &:hover {
-            @include hover-vignet;
+        &:active {
+            @include hover-fonctionning;
+        }
+        &:active .functioning__container__card__icon{
+            color: $color-primary;
         }
     }
 }
@@ -134,6 +129,12 @@
                 left: 6em;
                 bottom: 5.8em;
                 font-size: 1.5rem;
+            }
+            &:hover {
+                @include hover-fonctionning;
+            }
+            &:hover .functioning__container__card__icon{
+                color: $color-primary;
             }
         }
     }

@@ -31,7 +31,14 @@
     @include box-shadow;
     border: none;
     font-family: $font-secondary;
-    &:hover {
+    @media screen and (min-width: $desktop){
+        &:hover {
+            @include box-shadow ($color: darken($shadowgray, 25%));
+            filter: brightness(1.1);
+            cursor: pointer;
+        }
+    }
+    &:active {
         @include box-shadow ($color: darken($shadowgray, 25%));
         filter: brightness(1.1);
         cursor: pointer;
@@ -58,12 +65,20 @@
     -webkit-text-fill-color: transparent; 
     -webkit-text-stroke: .9px black;
     transition:all .4s;
- &:hover {
+ &:active {
    background-image: linear-gradient($color-secondary, $color-primary);
    -webkit-text-stroke: .3px $softgray;
    background-position: center;
    cursor: pointer;
  }
+ @media screen and (min-width: $desktop){
+    &:hover {
+        background-image: linear-gradient($color-secondary, $color-primary);
+        -webkit-text-stroke: .3px $softgray;
+        background-position: center;
+        cursor: pointer;
+ }
+}
 }
 
 

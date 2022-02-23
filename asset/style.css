@@ -152,7 +152,14 @@ footer {
   margin: 0.4rem;
   color: white;
 }
-.nav__btn:hover {
+@media screen and (min-width: 1060px) {
+  .nav__btn:hover {
+    box-shadow: 0px 0.4rem 0.7rem #969696;
+    filter: brightness(1.1);
+    cursor: pointer;
+  }
+}
+.nav__btn:active {
   box-shadow: 0px 0.4rem 0.7rem #969696;
   filter: brightness(1.1);
   cursor: pointer;
@@ -179,11 +186,19 @@ footer {
   -webkit-text-stroke: 0.9px black;
   transition: all 0.4s;
 }
-.restaurants__container__card__icon span:hover, .menu__title__icon span:hover {
+.restaurants__container__card__icon span:active, .menu__title__icon span:active {
   background-image: linear-gradient(#FF79DA, #9356DC);
   -webkit-text-stroke: 0.3px #f6f6f6;
   background-position: center;
   cursor: pointer;
+}
+@media screen and (min-width: 1060px) {
+  .restaurants__container__card__icon span:hover, .menu__title__icon span:hover {
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    -webkit-text-stroke: 0.3px #f6f6f6;
+    background-position: center;
+    cursor: pointer;
+  }
 }
 
 .loading {
@@ -306,9 +321,6 @@ footer {
   background-color: #f6f6f6;
   box-shadow: 0px 0.4rem 0.7rem #d6d6d6;
 }
-.functioning__container__card--bgcolor {
-  background-color: #ece1f9;
-}
 .functioning__container__card__text {
   width: 12em;
   font-weight: 600;
@@ -330,17 +342,16 @@ footer {
 .functioning__container__card__icon {
   width: 2em;
   font-size: 125%;
-}
-.functioning__container__card__icon--color-active {
-  color: #9356DC;
-}
-.functioning__container__card__icon--color-inactive {
   color: #848484;
 }
-.functioning__container__card:hover {
+.functioning__container__card:active {
   box-shadow: 0px 0.4rem 0.7rem #969696;
-  filter: brightness(1.03);
+  background-color: #9356DC;
+  background-color: #ece1f9;
   cursor: pointer;
+}
+.functioning__container__card:active .functioning__container__card__icon {
+  color: #9356DC;
 }
 
 @media screen and (min-width: 768px) {
@@ -372,6 +383,15 @@ footer {
     left: 6em;
     bottom: 5.8em;
     font-size: 1.5rem;
+  }
+  .functioning__container__card:hover {
+    box-shadow: 0px 0.4rem 0.7rem #969696;
+    background-color: #9356DC;
+    background-color: #ece1f9;
+    cursor: pointer;
+  }
+  .functioning__container__card:hover .functioning__container__card__icon {
+    color: #9356DC;
   }
 }
 .restaurants__title {
@@ -540,16 +560,28 @@ footer {
     max-width: 600px;
     margin: 1.5em auto;
   }
+  .menu__food__card:hover .menu__food__card__legend2 {
+    right: 0;
+    cursor: pointer;
+  }
+  .menu__food__card:hover .menu__food__card__legend {
+    width: 60%;
+    cursor: pointer;
+  }
+  .menu__food__card:hover .menu__food__card__legend2__checkbox__icon {
+    transform: rotate(2turn);
+    cursor: pointer;
+  }
 }
-.menu__food__card:hover .menu__food__card__legend2 {
+.menu__food__card:active .menu__food__card__legend2 {
   right: 0;
   cursor: pointer;
 }
-.menu__food__card:hover .menu__food__card__legend {
+.menu__food__card:active .menu__food__card__legend {
   width: 60%;
   cursor: pointer;
 }
-.menu__food__card:hover .menu__food__card__legend2__checkbox__icon {
+.menu__food__card:active .menu__food__card__legend2__checkbox__icon {
   transform: rotate(2turn);
   cursor: pointer;
 }
