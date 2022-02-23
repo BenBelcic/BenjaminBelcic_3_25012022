@@ -96,6 +96,12 @@
         &:active .functioning__container__card__icon{
             color: $color-primary;
         }
+        &:hover {
+            @include hover-fonctionning;
+        }
+        &:hover .functioning__container__card__icon{
+            color: $color-primary;
+        }
     }
 }
 
