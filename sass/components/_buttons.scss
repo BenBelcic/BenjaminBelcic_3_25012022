@@ -31,12 +31,10 @@
     @include box-shadow;
     border: none;
     font-family: $font-secondary;
-    @media screen and (min-width: $desktop){
-        &:hover {
-            @include box-shadow ($color: darken($shadowgray, 25%));
-            filter: brightness(1.1);
-            cursor: pointer;
-        }
+    &:hover {
+        @include box-shadow ($color: darken($shadowgray, 25%));
+        filter: brightness(1.1);
+        cursor: pointer;
     }
     &:active {
         @include box-shadow ($color: darken($shadowgray, 25%));
